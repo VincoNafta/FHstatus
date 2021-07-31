@@ -1,7 +1,7 @@
 <?php
-
-
+//IP adresa vášho servera(zvyčajne sa začína 82.208)
 $ip= '82.208.17.38';
+//Port nájdete za dvojbockou
 $port= 27522;
 //V prípade že nemáte domenu, prepíšte IP  a port v tvare XXXX:XXX
 $dns = 'mojadomena.sk';
@@ -35,7 +35,6 @@ $memory = $zdroj->memory;
 $list = $zdroj->players_list;
 
 if ($zobrazdns == true) {
-	# code...
 	echo "<br>IP: ".$dns;
 }
 if($zobrazstatus == true){
@@ -62,14 +61,13 @@ if ($zobrazlist == true) {
 		}
 	}
 	else{
-		echo("<table>");
-			foreach ($list as $key => $value) {
-				$hrac = $value->name;
-				echo "<tr><td><img src='https://minotar.net/avatar/".$hrac."' height=".$velkostav."'> ".$hrac." </td></tr>";		
-			}
-			echo "</table>";
+	echo("<table>");
+		foreach ($list as $key => $value) {
+			$hrac = $value->name;
+			echo "<tr><td><img src='https://minotar.net/avatar/".$hrac."' height=".$velkostav."'> ".$hrac." </td></tr>";		
 		}
-
+		echo "</table>";
+	}
 }
 
 ?>
