@@ -1,8 +1,8 @@
 <?php
 //IP adresa vášho servera(zvyčajne sa začína 82.208)
-$ip= '82.208.17.38';
+$ip= '82.208.17.32';
 //Port nájdete za dvojbockou
-$port= 27522;
+$port= 27548;
 //V prípade že nemáte domenu, prepíšte IP  a port v tvare XXXX:XXX
 $dns = 'mojadomena.sk';
 //zobrazenie DNS
